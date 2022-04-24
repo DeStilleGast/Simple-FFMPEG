@@ -1,0 +1,20 @@
+ {
+    "AppConfig": {
+        "lastSelectedEncoding": 0,
+        "defaultOutputPath": null
+    },
+    "EncodingOptions": [{ 
+        "name": "standard (ffmpeg)",
+        "arguments": "-i \"%in%\" %extra% \"%out%\""
+    }, {
+		"name": "standard (nvidea)",
+		"arguments": "-i \"%in%\" %extra% -vcodec h264_nvenc -preset slow \"%out%\""
+	}],
+    "ScaleOptions": [{
+        "Width": 1280,
+        "Height": 720
+    }, {
+        "Width": 320,
+        "Height": 280
+    }]
+  }

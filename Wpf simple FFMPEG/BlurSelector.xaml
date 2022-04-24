@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_simple_FFMPEG"
+        xmlns:Adorners="clr-namespace:DAP.Adorners"
+        xmlns:se="clr-namespace:Wpf_simple_FFMPEG.external"
+        x:Class="Wpf_simple_FFMPEG.BlurSelector"
+    
+        mc:Ignorable="d"
+        Title="BlurSelector" Height="450" Width="800" KeyUp="RemoveSelectedSphereKeybind">
+    <Grid>
+        <Grid Height="21
+              " VerticalAlignment="Top">
+            <Button Width="200" Content="Add new shape" Click="addNewRectangleButton" HorizontalAlignment="Left" />
+            <Button Width="200" Content="Remove selected shape" Margin="205,0,0,0" Click="removeSelectedButton" HorizontalAlignment="Left" />
+        </Grid>
+
+        <ScrollViewer x:Name="scrollViewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="0,20,0,0">
+            
+            <Grid>
+                <Image x:Name="imageHolder" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Canvas x:Name="canvas" Margin="0,55,0,-55" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <se:ShapeEditor x:Name="ShapeEditorControl" Height="100" Canvas.Left="46" Canvas.Top="170" Width="100"/>
+                </Canvas>
+            </Grid>
+            
+        </ScrollViewer>
+
+    </Grid>
+</Window>
