@@ -44,7 +44,7 @@ namespace Wpf_simple_FFMPEG {
             app.Run();
         }
 
-        public static string? findTool(string toolName) {
+        public static string findTool(string toolName) {
             string currentDir = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), toolName);
             string binDir = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "bin", toolName);
             string toolsDir = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "tools", toolName);

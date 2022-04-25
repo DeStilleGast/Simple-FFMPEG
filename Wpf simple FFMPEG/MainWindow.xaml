@@ -40,7 +40,7 @@
                 <Label x:Name="lblMaxValue" Content="{Binding UpperValue, Converter={StaticResource tc}, ElementName=tRangeTrimmer}" VerticalAlignment="Top" HorizontalAlignment="Right" Width="76"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="btnGo" Content="_Go" Margin="0,0,17,14" Click="btnGo_Click" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" TabIndex="15"/>
+        <Button x:Name="btnGo" Content="_Go" Margin="0,0,17,14" Click="btnGo_Click" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75" TabIndex="19"/>
         <GroupBox Height="60" Margin="10,152,17,0" VerticalAlignment="Top">
             <GroupBox.Header>
                 <CheckBox x:Name="cbVideoScaling" Content="Rescale" TabIndex="9"/>
@@ -73,19 +73,19 @@
 
         <GroupBox Height="57" Margin="0,217,17,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="136">
             <GroupBox.Header>
-                <CheckBox x:Name="cbChangeFps" Content="Modify FPS" TabIndex="12"/>
+                <CheckBox x:Name="cbChangeFps" Content="Modify FPS" TabIndex="14"/>
             </GroupBox.Header>
             <Grid IsEnabled="{Binding IsChecked, ElementName=cbChangeFps}">
                 <Grid Margin="18,10,17,6">
-                    <Button Content="-" HorizontalAlignment="Left" Width="12" Click="RemoveSomeFrameRateButton"/>
-                    <TextBox x:Name="txtNewFps" Margin="12,0" TextWrapping="Wrap" PreviewTextInput="txtNewFps_PreviewTextInput"/>
-                    <Button Content="+" HorizontalAlignment="Right" Width="12" Click="AddMoreFrameRateButton"/>
+                    <Button Content="-" HorizontalAlignment="Left" Width="12" Click="RemoveSomeFrameRateButton" TabIndex="15"/>
+                    <TextBox x:Name="txtNewFps" Margin="12,0" TextWrapping="Wrap" PreviewTextInput="txtNewFps_PreviewTextInput" TabIndex="17"/>
+                    <Button Content="+" HorizontalAlignment="Right" Width="12" Click="AddMoreFrameRateButton" TabIndex="16"/>
                 </Grid>
             </Grid>
         </GroupBox>
 
         <Label x:Name="lblStatus" Content="Status: doing nothing :)" HorizontalAlignment="Left" Margin="20,0,0,11" Height="26" VerticalAlignment="Bottom"/>
-        <Button Margin="0,0,97,14" Click="aboutBoxWithCreditsButton" HorizontalAlignment="Right" Width="28" Height="20" VerticalAlignment="Bottom" TabIndex="14">
+        <Button Margin="0,0,97,14" Click="aboutBoxWithCreditsButton" HorizontalAlignment="Right" Width="28" Height="20" VerticalAlignment="Bottom" TabIndex="19">
             <Image Source="images/application.png" />
         </Button>
     </Grid>
