@@ -15,6 +15,8 @@ namespace Wpf_simple_FFMPEG {
         //private List<Rectangle> rectangles = new List<Rectangle>();
         private Rectangle lastSelected = null;
 
+        private readonly SimpleConfig simpleConfig;
+
         public BlurSelector(ImageSource image, List<Rect> oldState) {
             InitializeComponent();
 
@@ -84,6 +86,17 @@ namespace Wpf_simple_FFMPEG {
             if (e.Key == Key.Delete) {
                 removeSelectedButton(null, null);
             }
+        }
+
+        private void ButtonLoadPreset_Click(object sender, RoutedEventArgs e) {
+                
+            //IncList.ContextMenu = new ContextMenu();
+            //IncList.ContextMenu.Items.Add(new MenuItem() { Header = "Test1" });
+            //IncList.ContextMenu.Items.Add(new MenuItem() { Header = "Test2" });
+        }
+
+        private void ButtonSavePreset_Click(object sender, RoutedEventArgs e) {
+            
         }
     }
 }

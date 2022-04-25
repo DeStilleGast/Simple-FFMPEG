@@ -172,5 +172,14 @@
   <ItemGroup>
     <Resource Include="VidEditor.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bullet_disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\delete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
